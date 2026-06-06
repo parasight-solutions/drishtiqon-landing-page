@@ -1,0 +1,154 @@
+.plans .card {
+    padding: 30px;
+    height: 100%;
+    border: none;
+}
+
+.plans .card .card-header {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0);
+    border-bottom: 0;
+}
+
+.plans .card .card-header .image {
+    width: 70px;
+    height: 70px;
+    background-color: #FFEAD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.plans .card .card-header .image img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.plans .card .card-header h6 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.plans .card-body {
+    padding: 0;
+}
+
+.plans .card-footer {
+    background-color: rgba(255, 0, 0, 0);
+    border-top: none;
+    padding: 0;
+}
+
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-wrapper .list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.list-wrapper .list img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.list-wrapper .list p {
+    margin-bottom: 0;
+}
+
+.plans .card .common-btn {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.middle {
+    border: 2px solid var(--blue-color) !important;
+    position: relative;
+}
+
+
+.middle .pill {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blue-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 18px;
+}
+
+.middle .pill p {
+    margin-bottom: 0;
+    color: white;
+}
+
+.middle .common-btn {
+    background-color: var(--blue-color);
+}
+
+.middle .common-btn:hover {
+    background-color: var(--orange-color);
+}
+
+.end .common-btn:hover {
+    background-color: black;
+}
+
+.middle h6 {
+    color: var(--blue-color);
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.end h6 {
+    color: #00A843;
+    font-weight: 600;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.end .common-btn {
+    background-color: #00A843;
+}
+
+.plans .middle .card-header .image {
+    background-color: #F0EDFE;
+}
+
+.plans .end .card-header .image {
+    background-color: #E0F3EB;
+}
+
+.bg-cyan {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #F9F9FF;
+    border: 1px solid #dbdbdb;
+}
+
+@media screen and (max-width:425px) {
+    .bg-cyan {
+        padding: 20px;
+
+    }
+
+    .plans .card {
+        padding: 22px;
+    }
+}

@@ -1,0 +1,41 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.why-card .image {
+    width: 50px;
+    height: 50px;
+    background-color: #F1F1FE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.why-card .image img {
+    width: 25px;
+    height: 25px;
+}
+
+.why-card h3 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 8px;
+}

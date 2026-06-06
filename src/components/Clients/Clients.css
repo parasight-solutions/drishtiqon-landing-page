@@ -1,0 +1,50 @@
+.clients-section {
+    background-color: white;
+}
+
+.client-card img {
+    width: 100%;
+    height: 32px;
+    object-fit: contain;
+}
+
+.fade-bg {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.fade-bg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(177, 179, 178, 0) 8%, rgba(177, 179, 178, 0) 16%, rgba(177, 179, 178, 0) 54%, rgba(255, 255, 255, 0.42) 92%, rgb(255, 255, 255) 100%);
+    z-index: 9;
+}
+
+.counter-box {
+    background-color: #F9F9FF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+}
+
+.counter-box h2 {
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+.clients-section .row div:nth-child(1) .counter-box h2,
+.clients-section .row div:nth-child(4) .counter-box h2 {
+    color: var(--blue-color);
+}
+
+
+.counter-box p {
+
+    margin-bottom: 0;
+}

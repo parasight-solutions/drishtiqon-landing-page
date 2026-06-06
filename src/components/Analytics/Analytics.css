@@ -1,0 +1,49 @@
+.bg-big {
+    background-color: #2c3686f6;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.bg-big::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url('/logo-icons/drishtiqon-logo.png');
+    background-size: cover;
+    background-position: left;
+    z-index: -1;
+}
+
+
+
+.ana-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.analytics .ana-links:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.ana-links img {
+    width: 18px;
+}
+
+.ana-links p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media (max-width: 575px) {
+    .bg-big {
+        padding: 35px 20px;
+    }
+}

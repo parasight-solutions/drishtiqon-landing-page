@@ -1,0 +1,51 @@
+.navbar {
+    background: linear-gradient(to right, #ffffff 0%, #f8feffea 100%);
+    position: relative;
+    transition: all .3s ease-in-out;
+    padding: 0;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(to right, #ffffff 0%, #f8feffea 100%);
+    animation: slideDown 1s forwards;
+    box-shadow: 1px 1px 4px rgba(220, 220, 220, 0.349);
+}
+
+@keyframes slideDown {
+    from {
+        top: -80px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.navbar-brand img {
+    width: 150px
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--orange-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width:991px) {
+    .navbar {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,160 @@
+.need-box {
+    background-color: #F9F9FF;
+    border-radius: 8px;
+    position: relative;
+    padding: 40px;
+}
+
+.need-list {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.need-list .image {
+    width: 45px;
+    height: 45px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.need-list {
+    margin-bottom: 20px;
+}
+
+.need-list .image img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+}
+
+.need-list h6 {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717CC;
+}
+
+.need-card {
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.need-card h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000;
+}
+
+.need-card-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.need-card-price .amount {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+}
+
+.need-card-price .duration {
+    font-size: 16px;
+    font-weight: 400;
+    color: #111827;
+}
+
+
+.need-card ul {
+    margin: 0;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.need-card li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.4;
+}
+
+.need-card h5 {
+    font-weight: 700;
+    color: var(--blue-color);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.plus {
+    position: relative;
+}
+
+.plus::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 40px;
+    transform: translate(-120%, -50%);
+}
+
+@media screen and (max-width:991px) {
+    .plus::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .need-card-price .amount {
+        font-size: 30px;
+
+    }
+
+    .need-card h3 {
+
+        font-size: 15px;
+
+    }
+
+    .need-box {
+
+        padding: 20px;
+    }
+
+    .need-card-price .duration {
+        font-size: 12px;
+    }
+
+    .need-list .image {
+        width: 34px;
+        height: 34px;
+    }
+
+    .need-list .image img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .need-list h6 {
+        font-size: 13px;
+    }
+}
