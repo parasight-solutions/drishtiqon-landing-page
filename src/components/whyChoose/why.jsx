@@ -39,12 +39,12 @@ const why = () => {
     <section className='why pt-0'>
       <div className="container">
         <div className="row text-center mb-lg-5 mb-4">
-          <div className="common-title">
+          <div className="common-title" data-aos="fade-up">
             <h2>Why Businesses Choose DrishtIQon </h2>
             <p>Manage every critical business process from a centralized ERP ecosystem designed to improve collaboration, productivity, and operational excellence.</p>
           </div>
         </div>
-        <div className="grid-container">
+        <div className="grid-container" data-aos="fade-up">
           {whyData.map((item) => (
             <div className="why-card" key={item.id}>
               <div className="image">

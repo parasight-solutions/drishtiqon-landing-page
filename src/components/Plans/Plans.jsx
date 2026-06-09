@@ -9,13 +9,13 @@ const Plans = () => {
         <section className='plans pt-0'>
             <div className="container bg-cyan">
                 <div className="row mb-lg-5 mb-4 text-center">
-                    <div className="common-title">
+                    <div className="common-title" data-aos="fade-up">
                         <h2>Simple Plans, Powerful Platform. </h2>
                         <p className='mb-0'>Start with a plan that fits your business today and expand with modules as your operations grow.</p>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4" data-aos="fade-up" >
                         <div className="card">
                             <div className="card-header">
                                 <div className="image">
@@ -62,7 +62,7 @@ const Plans = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div className="card middle">
                             <div className="card-header">
                                 <div className="image">
@@ -113,7 +113,7 @@ const Plans = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-4" data-aos="fade-up" data-aos-delay="400">
                         <div className="card end">
                             <div className="card-header">
                                 <div className="image">

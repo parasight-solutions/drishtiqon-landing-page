@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterStrip = () => {
     return (
-        <div className="footer-strip">
+        <div className="footer-strip" data-aos="fade-up">
             <div className="container bg-gray">
                 <div className="row">
                     <div className="col-lg-7 col-md-12 col-sm-12">

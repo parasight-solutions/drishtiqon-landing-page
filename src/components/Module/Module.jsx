@@ -8,13 +8,13 @@ const Module = () => {
         <section className='module pt-0'>
             <div className="container">
                 <div className="row mb-lg-5 mb-4 text-center">
-                    <div className="common-title">
+                    <div className="common-title" data-aos="fade-up">
                         <h2>All Modules. One Seamless Experience. </h2>
                         <p className='mb-0'>Manage every critical business process from a centralized ERP ecosystem designed to improve collaboration, productivity, and operational excellence.</p>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3">
+                    <div className="col-lg-3 col-md-4 col-sm-6 mb-lg-0 mb-md-0 mb-3" data-aos="fade-right">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance" type="button" role="tab" aria-controls="finance" aria-selected="true">
@@ -79,7 +79,7 @@ const Module = () => {
                         </ul>
 
                     </div>
-                    <div className="col-lg-9 col-md-8 col-sm-6">
+                    <div className="col-lg-9 col-md-8 col-sm-6" data-aos="fade-left">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="finance" role="tabpanel" aria-labelledby="finance-tab">
                                 <div className="image">

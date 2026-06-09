@@ -28,7 +28,7 @@ const Analytics = () => {
 
   ]
   return (
-    <section className='analytics py-0'>
+    <section className='analytics py-0' data-aos="fade-up">
       <div className="container">
         <div className="row bg-big">
           <div className="col-lg-6 col-md-12 col-sm-12">

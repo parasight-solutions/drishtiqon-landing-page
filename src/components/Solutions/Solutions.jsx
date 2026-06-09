@@ -28,33 +28,33 @@ const Solutions = () => {
             description: 'Track shipments, optimize routes, and manage warehouse operations with real-time visibility.'
         },
     ]
-  return (
-      <section className="solutions">
-          <div className="container">
-              <div className="row mb-lg-5 mb-3 text-center">
-                  <div className="common-title">
-                      <h2>Solutions for Every Industries</h2>
-                      <p>Tailored ERP Solutions For Every Industry</p>
-                  </div>
-              </div>
-              <div className="row">
-                  {solutions.map((item, index) => (
-                      <div className="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-3" key={index}>
-                          <div className="solution-card">
-                              <div className="image">
-                                  <img src={item.img} alt="icon" />
-                              </div>
-                              <div className="content">
-                                  <h3>{item.title}</h3>
-                                <p>{item.description}</p> 
-                              </div>
-                          </div>
-                      </div>
+    return (
+        <section className="solutions">
+            <div className="container">
+                <div className="row mb-lg-5 mb-3 text-center">
+                    <div className="common-title" data-aos="fade-up">
+                        <h2>Solutions for Every Industries</h2>
+                        <p>Tailored ERP Solutions For Every Industry</p>
+                    </div>
+                </div>
+                <div className="row">
+                    {solutions.map((item, index) => (
+                        <div className="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-3" key={index} data-aos="fade-up">
+                            <div className="solution-card">
+                                <div className="image">
+                                    <img src={item.img} alt="icon" />
+                                </div>
+                                <div className="content">
+                                    <h3>{item.title}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            </div>
+                        </div>
                     ))}
-              </div>
-          </div>
-    </section>
-  )
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Solutions

@@ -5,8 +5,8 @@ import FooterStrip from './FooterStrip'
 const Footer = () => {
   return (
     <>
-    <FooterStrip />
-      <div className="footer">
+      <FooterStrip />
+      <div className="footer" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
@@ -63,11 +63,11 @@ const Footer = () => {
                       <li><a href="#">hello@drishtiqon.com</a></li>
                       <li><a href="#">+91 80 4719 3000</a></li>
                       <li><a href="#">India</a></li>
-                    
+
                     </ul>
                   </div>
                 </div>
-                
+
               </div>
             </div>
             <div className="col-lg-2 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    
+
     </>
   )
 }

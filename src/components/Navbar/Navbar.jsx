@@ -34,7 +34,7 @@ export const Navbar = () => {
     return (
 
 
-        <nav className="navbar navbar-expand-lg ">
+        <nav className="navbar navbar-expand-lg " data-aos="fade-down">
             <div className="container-fluid px-lg-5">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="drishtiqon logo" />
