@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <FooterStrip />
-      <div className="footer" data-aos="fade-up">
+      <div className="footer">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
