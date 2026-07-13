@@ -3,6 +3,16 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
 }
+.why .common-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why .common-title p{
+    max-width: 690px;
+  
+
+}
 
 /* Tablet */
 @media (max-width: 992px) {
@@ -38,4 +48,14 @@
     font-size: 18px;
     color: #000000;
     margin-bottom: 8px;
+}
+
+.dms-wch span {
+  color: var(--blue-color);
+}
+.bes-wch span {
+  color: #00a843;
+}
+.msme-wch span {
+  color: var(--orange-color);
 }

@@ -13,8 +13,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contact from "./Contact";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import Contact from "./pages/Contact";
+import HomePage from './pages/HomePage'
+import MSME_Pack from './pages/MSME_Pack'
+import DMS from './pages/DMS'
+import BES from './pages/BES'
+import Pricing from './pages/Pricing'
+
+
+function HomeWrapper() {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  )
+}
 
 function App() {
 
@@ -29,19 +45,18 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Banner />
-        <Clients />
-        <Module />
-        <WhyChooseUs />
-        <Analytics />
-        <Solutions />
-        {/* <Need /> */}
-        <Plans />
-        <Footer />
+
 
         <Routes>
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<HomeWrapper />} >
+            <Route index element={<HomePage />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="pricing" element={<Pricing />} />
+            <Route path="msme-pack" element={<MSME_Pack />} />
+            <Route path="dms" element={<DMS />} />
+            <Route path="bes" element={<BES />} />
+          </Route>
+
         </Routes>
       </BrowserRouter>
 

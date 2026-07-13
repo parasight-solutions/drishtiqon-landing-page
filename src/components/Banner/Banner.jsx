@@ -1,33 +1,79 @@
 import React from 'react'
 import './Banner.css'
 import playButton from '/logo-icons/play-btn.png'
+import bullets_tick from '/logo-icons/charm_circle-tick.png'
 import bannerImage from '/section-images/banner-img.png'
 
 
-const Banner = () => {
+const Banner = ({
+    title,
+    description,
+    image,
+    primaryBtn,
+    secondaryBtn,
+    bullets = [],
+    showPlayIcon = false,
+    bannerClass = "",
+}) => {
     return (
         <section className="banner pt-4 pb-4">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12 mb-lg-0 mb-md-3 mb-sm-3 d-flex align-items-center">
-                        <div className="banner-content">
-                            <h1 data-aos="fade-right">One <span>Platform</span>. <br /> Complete <span>Business</span> Control.</h1>
-                            <p data-aos="fade-right">DrishtIQon ERP unifies Finance, Procurement, Inventory, Production, Sales, and Warehouse operations into one intelligent platform. Streamline workflows, gain real-time visibility, and make faster decisions with complete control over your business.</p>
-                            <div className="btn-group gap-lg-3 gap-md-3 gap-sm-3 gap-1">
-                                <a href="#" className="common-btn" data-aos="fade-right">
-                                    <p>Book A Demo</p>
+
+                    {/* Left Content */}
+
+                    <div className="col-lg-6 d-flex align-items-center">
+                        <div className={`banner-content ${bannerClass}`}>
+
+                            <h1>{title}</h1>
+
+                            <p>{description}</p>
+
+                            {/* Bullets */}
+
+                            {bullets.length > 0 && (
+                                <div className="banner-points">
+                                    <div className="row">
+
+                                        {bullets.map((item, index) => (
+                                            <div className="col-6 mb-2 bullets" key={index}>
+                                                <img src={bullets_tick} alt="" className='bullets_ticks' /> {item}
+                                            </div>
+                                        ))}
+
+                                    </div>
+                                </div>
+                            )}
+
+                            <div className="btn-group gap-3">
+
+                                <a href={primaryBtn.link} className="common-btn">
+                                    <p>{primaryBtn.text}</p>
                                 </a>
-                                <a href="#" className="common-btn" data-aos="fade-right" data-aos-delay="200">
-                                    <p>Explore Platform</p>
-                                    <img src={playButton} alt="play button" />
+
+                                <a href={secondaryBtn.link} className="common-btn">
+
+                                    <p>{secondaryBtn.text}</p>
+
+                                    {showPlayIcon && (
+                                        <img src={playButton} alt="" />
+                                    )}
+
                                 </a>
+
                             </div>
+
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-sm-12">
-                        <div className="image" data-aos="fade-left">
-                            <img src={bannerImage} alt="banner image" />
+
+                    {/* Right Image */}
+
+                    <div className="col-lg-6">
+
+                        <div className="image">
+                            <img src={image} alt="" />
                         </div>
+
                     </div>
 
                 </div>

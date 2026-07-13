@@ -14,7 +14,7 @@
 .need-list .image {
     width: 45px;
     height: 45px;
-    background-color: var(--blue-color);
+    background-color: #00A843;
     border-radius: 50%;
     display: flex;
     align-items: center;

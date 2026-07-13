@@ -62,8 +62,8 @@ const Need = () => {
                                <h3>Base Platform</h3>
 
                                 <div class="need-card-price">
-                                    <span class="amount">₹9,999</span>
-                                    <span class="duration">/ month</span>
+                                    {/* <span class="amount">₹9,999</span>
+                                    <span class="duration">/ month</span> */}
                                 </div>
 
                                 <p>Includes Core Platform</p>
@@ -81,8 +81,8 @@ const Need = () => {
                                <h3>Add Modules</h3>
 
                                 <div class="need-card-price">
-                                    <span class="amount">₹2,999 </span>
-                                    <span class="duration"> / month per module</span>
+                                    {/* <span class="amount">₹2,999 </span>
+                                    <span class="duration"> / month per module</span> */}
                                 </div>
 
                                 <p>Add the modules you need and scale anytime</p>

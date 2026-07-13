@@ -7,7 +7,9 @@
     box-shadow: 1px 1px 1px #00000033;
     height: 100%;
 }
-
+.module{
+    overflow: hidden;
+}
 .module .nav-flex {
     display: flex;
     align-items: center;

@@ -1,0 +1,85 @@
+/* =========================
+   Breadcrumb
+========================= */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap to next line on small screens */
+  gap: 4px 6px; /* row-gap column-gap */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.4;
+  background: linear-gradient(to right, #ffffff 0%, #f8feffea 100%);
+  padding-top: 30px;
+  margin-bottom: 0;
+  overflow-x: auto; /* Scroll only if absolutely necessary */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.breadcrumb::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.breadcrumb a:hover {
+  color: #ff7a00;
+}
+
+.separator {
+  color: #555;
+  white-space: nowrap;
+}
+
+.active {
+  color: rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 12px;
+    gap: 4px;
+    padding-top: 24px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 11px;
+    line-height: 1.5;
+    gap: 3px 5px;
+    padding-top: 18px;
+    justify-content: flex-start;
+  }
+}
+
+/* =========================
+   Extra Small Devices (320px)
+========================= */
+
+@media (max-width: 320px) {
+  .breadcrumb {
+    font-size: 10px;
+    gap: 2px 4px;
+    line-height: 1.5;
+    padding-top: 16px;
+  }
+}

@@ -9,15 +9,28 @@ const Footer = () => {
       <div className="footer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
               <div className="footer-img">
                 <img src="/logo-icons/drishtiqon-logo.png" alt="" />
               </div>
               <p>DrishtiQon helps growing businesses streamline operations, improve visibility, and make faster decisions through a unified ERP ecosystem.</p>
             </div>
-            <div className="col-lg-7 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
+            <div className="col-lg-6 col-md-6 col-sm-12 mb-lg-0 mb-md-3">
               <div className="row">
-                <div className="col-lg-3 col-6 mb-lg-0 mb-3">
+                {/* <div className="col-lg-3 col-6 mb-lg-0 mb-3">
+                  <div className="footer-list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                      <li><a href="#">Solutions</a></li>
+                      <li><a href="#">Modules</a></li>
+                      <li><a href="#">Industries</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Resources</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div> */}
+                <div className="col-lg-4 col-6 mb-lg-0 mb-3">
                   <div className="footer-list">
                     <h4>Quick Links</h4>
                     <ul>
@@ -30,33 +43,20 @@ const Footer = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3 col-6 mb-lg-0 mb-3">
+                <div className="col-lg-4 col-6 mb-lg-0 mb-3">
                   <div className="footer-list">
-                    <h4>Quick Links</h4>
+                    <h4>Modules</h4>
                     <ul>
-                      <li><a href="#">Solutions</a></li>
-                      <li><a href="#">Modules</a></li>
-                      <li><a href="#">Industries</a></li>
-                      <li><a href="#">Pricing</a></li>
-                      <li><a href="#">Resources</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Finance</a></li>
+                      <li><a href="#">Inventory</a></li>
+                      <li><a href="#">Procurement</a></li>
+                      <li><a href="#">Production</a></li>
+                      <li><a href="#">Sales</a></li>
+                      <li><a href="#">Warehouse</a></li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-3 col-6 mb-lg-0 mb-3">
-                  <div className="footer-list">
-                    <h4>Quick Links</h4>
-                    <ul>
-                      <li><a href="#">Solutions</a></li>
-                      <li><a href="#">Modules</a></li>
-                      <li><a href="#">Industries</a></li>
-                      <li><a href="#">Pricing</a></li>
-                      <li><a href="#">Resources</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-6 mb-lg-0 mb-3">
+                <div className="col-lg-4 col-6 mb-lg-0 mb-3">
                   <div className="footer-list">
                     <h4>Contact</h4>
                     <ul>
