@@ -1,5 +1,6 @@
 import React from "react";
 import "./Plans.css";
+import { Link } from "react-router-dom";
 
 const Plans = ({ title, description, plans, containerClass = "", }) => {
     return (
@@ -65,9 +66,9 @@ const Plans = ({ title, description, plans, containerClass = "", }) => {
                                 {plan.note && <h6>{plan.note}</h6>}
 
                                 <div className="card-footer">
-                                    <a href={plan.buttonLink} className="common-btn">
+                                    <Link to={plan.buttonLink} className="common-btn">
                                         <p>{plan.buttonText}</p>
-                                    </a>
+                                    </Link>
                                 </div>
 
                             </div>
