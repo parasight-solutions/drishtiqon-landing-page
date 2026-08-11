@@ -3,6 +3,7 @@ import './Banner.css'
 import playButton from '/logo-icons/play-btn.png'
 import bullets_tick from '/logo-icons/charm_circle-tick.png'
 import bannerImage from '/section-images/banner-img.png'
+import { Link } from 'react-router-dom'
 
 
 const Banner = ({
@@ -51,7 +52,7 @@ const Banner = ({
                                     <p>{primaryBtn.text}</p>
                                 </Link>
 
-                                <link href={secondaryBtn.link} className="common-btn">
+                                <Link href={secondaryBtn.link} className="common-btn">
 
                                     <p>{secondaryBtn.text}</p>
 
@@ -59,7 +60,7 @@ const Banner = ({
                                         <img src={playButton} alt="" />
                                     )}
 
-                                </link>
+                                </Link>
 
                             </div>
 
