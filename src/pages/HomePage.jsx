@@ -133,7 +133,7 @@ Warehouse into one platform, designed by our consulting team’s 6 years inside 
                 image={bannerImage}
                 primaryBtn={{
                     text: "Book A Demo -->",
-                    link: "#",
+                    link: "/book-a-demo",
                 }}
                 secondaryBtn={{
                     text: "Watch 2-Min Walkthrough",

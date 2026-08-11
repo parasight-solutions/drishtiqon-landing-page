@@ -11,14 +11,14 @@ import GreenIcon from "/logo-icons/green-tick.png";
 const plans = [
     {
         icon: "/logo-icons/rocket.png",
-        name: "Basic Edition",
+        name: "Starter",
         shortDescription:
-            "",
+            "For distributors ready to get order and stock records out of scattered spreadsheets",
         price: "",
         duration: "",
         billing: "",
         tickIcon: BlueIcon,
-        description: "Perfect for businesses beginning their digital transformation.",
+        description: "One system for orders, stock, and retailer records See what's actually in stock, in real time Simple entry, no retraining required",
         featurehead: "Features Included:",
         features: [
             "Zero Automation",
@@ -29,18 +29,18 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Businesses looking for a simple and affordable Distributor Management System.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
     },
     {
         icon: "/logo-icons/growth-icon.png",
-        name: "Silver Edition",
+        name: "Core",
         shortDescription:
-            "",
+            "For distributors managing credit, collections, and multiple retailers day to day",
         price: "",
         duration: "",
         billing: "",
         tickIcon: OrangeIcon,
-        description: "Automation designed for growing businesses.",
+        description: "One system for orders, stock, and retailer records See what's actually in stock, in real time Simple entry, no retraining required",
         featurehead: "Everything in Basic, plus:",
         features: [
             "OTC Automation",
@@ -51,21 +51,21 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Businesses aiming to streamline distribution processes and improve operational efficiency.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
         cardClass: "middle",
         pill: "Most Popular",
         note: "",
     },
     {
         icon: "/logo-icons/rocket.png",
-        name: "Gold Edition",
+        name: "Growth",
         shortDescription:
-            "",
+            "For distributors ready to automate the reconciliation and routine order work",
         price: "",
         duration: "",
         billing: "",
         tickIcon: BlueIcon,
-        description: "Advanced automation and business intelligence for scaling organizations.",
+        description: "Automated reconciliation across locations Low-stock and overdue-payment alerts, before they become problems Ready to scale to more retailers without adding headcount",
         featurehead: "Features Included:",
         features: [
             "Business Intelligence (BI)",
@@ -74,7 +74,7 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Organizations looking for complete visibility, field sales automation, and data-driven decision-making.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
         cardClass: "end",
         note: "",
     },
@@ -126,22 +126,22 @@ const DMS = () => {
                 bannerClass='dms-banner'
                 title={
                     <>
-                        Distributor <br />
-                        <span>Management System</span>
-
+                        {/* Distributor <br />
+                        <span>Management System</span> */}
+                        Stop reconciling five sources that all disagree.
                     </>
                 }
-                description="Streamline and automate your distributor network, sales operations, order fulfillment, and inventory management with an intelligent platform designed to improve visibility, collaboration, and business performance."
+                description="Track stock across locations, orders across retailers, and payments across everyone in one system that matches what's actually happening, not what was last updated."
                 image={bannerImage}
                 bullets={[
-                    "Real-Time Visibility",
-                    "Automated Workflows",
-                    "Better Collaboration",
-                    "Accurate Reporting",
+                    // "Real-Time Visibility",
+                    // "Automated Workflows",
+                    // "Better Collaboration",
+                    // "Accurate Reporting",
                 ]}
                 primaryBtn={{
                     text: "Book A Demo",
-                    link: "#",
+                    link: "/book-a-demo",
                 }}
                 secondaryBtn={{
                     text: "Talk to an Expert",

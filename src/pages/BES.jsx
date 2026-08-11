@@ -57,22 +57,23 @@ const BES = () => {
                 bannerClass='bes-banner'
                 title={
                     <>
-                        Business <br />
-                        <span>Enterprise Suit</span>
+                        {/* Business <br />
+                        <span>Enterprise Suit</span> */}
+                        Built to be shaped around your organization, not the other way around.
 
                     </>
                 }
-                description="Transform complex business operations with a fully customizable ERP solution designed around your unique workflows, departments, and business goals. Whether you're managing multiple branches, manufacturing units, or enterprise-wide operations, Business Enterprise Suite adapts to your business—not the other way around."
+                description="Multi-entity operations, enterprise-grade security, and a platform that adapts to your structure. Start with the core, add exactly what your organization needs."
                 image={bannerImage}
                 bullets={[
-                    "Fully Customizable",
-                    "Enterprise-Grade Security",
-                    "Advanced Analytics & BI",
-                    "Dedicated Implementation",
+                    // "Fully Customizable",
+                    // "Enterprise-Grade Security",
+                    // "Advanced Analytics & BI",
+                    // "Dedicated Implementation",
                 ]}
                 primaryBtn={{
                     text: "Book A Demo",
-                    link: "#",
+                    link: "/book-a-demo",
                 }}
                 secondaryBtn={{
                     text: "Talk to an Expert",

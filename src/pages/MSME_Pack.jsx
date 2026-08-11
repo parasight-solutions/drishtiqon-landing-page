@@ -11,14 +11,14 @@ import GreenIcon from "/logo-icons/green-tick.png";
 const plans = [
     {
         icon: "/logo-icons/rocket.png",
-        name: "Basic Edition",
+        name: "Starter",
         shortDescription:
-            "",
+            "For businesses just getting off paper and spreadsheets",
         price: "",
         duration: "",
         billing: "",
         tickIcon: OrangeIcon,
-        description: "Perfect for businesses beginning their digital transformation.",
+        description: "Get all your data into one place, accessible from anywhere Simple entry, no training required See your business clearly for the first time",
         featurehead: "Features Included:",
         features: [
             "Zero Automation",
@@ -29,18 +29,18 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Small businesses looking for an affordable ERP solution.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
     },
     {
         icon: "/logo-icons/growth-icon.png",
-        name: "Silver Edition",
+        name: "Core",
         shortDescription:
-            "",
+            "For businesses ready to run daily operations from one system",
         price: "",
         duration: "",
         billing: "",
         tickIcon: BlueIcon,
-        description: "Automation designed for growing businesses.",
+        description: "Everything in Starter, plus the tools you'll actually use every day Built-in reports so you stop guessing Multiple team members, without the chaos",
         featurehead: "Features Included:",
         features: [
             "Everything in Basic, plus",
@@ -52,21 +52,21 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Businesses looking to streamline operations and reduce manual work.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
         cardClass: "middle",
         pill: "Most Popular",
         note: "",
     },
     {
         icon: "/logo-icons/rocket.png",
-        name: "Gold Edition",
+        name: "Growth",
         shortDescription:
-            "",
+            "For businesses ready to stop doing repetitive work by hand",
         price: "",
         duration: "",
         billing: "",
         tickIcon: OrangeIcon,
-        description: "Advanced automation and business intelligence for scaling organizations.",
+        description: "Everything in Core, plus automation for your busiest tasks Save hours every week on repeat work Ready to scale without switching systems later",
         featurehead: "Features Included:",
         features: [
             "Zero Automation",
@@ -77,7 +77,7 @@ const plans = [
         bestfor: "Best For",
         bestdescription: "Small businesses looking for an affordable ERP solution.",
         buttonText: "Book A Demo",
-        buttonLink: "#",
+        buttonLink: "/book-a-demo",
         cardClass: "end",
         note: "",
     },
@@ -129,20 +129,21 @@ const MSME_Pack = () => {
                 bannerClass='msme-banner'
                 title={
                     <>
-                        <span>MSME </span>Pack
+                        {/* <span>MSME </span>Pack */}
+                        Built for businesses that don't run on guesswork.
                     </>
                 }
-                description="Manage sales, purchases, inventory, finance, and compliance from one intelligent platform. MSME Pack helps businesses automate daily operations, improve efficiency, and make smarter decisions with real-time insights."
+                description="Sales, inventory, and finance on one platform, run the way it should have been from the start."
                 image={bannerImage}
                 bullets={[
-                    "Easy to use",
-                    "GST Compliant",
-                    "E-Invoicing Ready",
-                    "SLA Based Support",
+                    // "Easy to use",
+                    // "GST Compliant",
+                    // "E-Invoicing Ready",
+                    // "SLA Based Support",
                 ]}
                 primaryBtn={{
                     text: "Book A Demo",
-                    link: "#",
+                    link: "/book-a-demo",
                 }}
                 secondaryBtn={{
                     text: "Talk to an Expert",
@@ -151,7 +152,7 @@ const MSME_Pack = () => {
                 showPlayIcon={false}
             />
             <WhyChooseUs
-              wchClass='msme-wch'
+                wchClass='msme-wch'
                 title="Why Choose"
                 spanTitle="MSME Pack?"
                 description="Running a growing business involves managing multiple processes every day—from sales and purchases to inventory and accounting. MSME Pack brings everything together into one integrated platform, helping you reduce manual work, improve accuracy, and scale your business with confidence."
