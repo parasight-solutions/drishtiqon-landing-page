@@ -86,31 +86,31 @@ const HomePage = () => {
             id: 1,
             whyIcon: "/logo-icons/timeManaged.png",
             title: "Real-Time Visibility",
-            description: "Monitor every department and process with live business insights.",
+            description: "See stock counts and cash position the moment they change. The #1 gap",
         },
         {
             id: 2,
             whyIcon: "/logo-icons/realTime.png",
             title: "Intelligent Automation",
-            description: "Reduce manual work and streamline repetitive business processes.",
+            description: "Kill the manual reconciliation work our consultants watched teams redo every single month.",
         },
         {
             id: 3,
             whyIcon: "/logo-icons/centralized.png",
             title: "Centralized Control",
-            description: "Manage operations, resources, and performance from one platform.",
+            description: "One login instead of the 4-5 disconnected tools most clients started with.",
         },
         {
             id: 4,
             whyIcon: "/logo-icons/scalability.png",
             title: "Scalable Architecture",
-            description: "Built to support growing businesses across multiple teams and locations.",
+            description: "Built to grow with you from a 10-person team to multi-location operations.",
         },
         {
             id: 5,
             whyIcon: "/logo-icons/shield.png",
             title: "Secure & Reliable",
-            description: "Enterprise-grade security with controlled user access & protection.",
+            description: "ISO-aligned access control & encrypted data, informed by real client compliance needs.",
         },
     ];
 
@@ -124,18 +124,19 @@ const HomePage = () => {
             <Banner
                 title={
                     <>
-                        One <span>Platform</span>.<br />
-                        Complete <span>Business</span> Control.
+                        Your Business Has Outgrown Excel, Tally & WhatsApp Groups.<span>Your ERP Should Too.</span>
+
                     </>
                 }
-                description="DrishtIQon ERP unifies Finance, Procurement, Inventory, Production, Sales, and Warehouse operations into one intelligent platform. Streamline workflows, gain real-time visibility, and make faster decisions with complete control over your business."
+                description="DrishtlQon unifies Finance, Inventory, Procurement, Sales &
+Warehouse into one platform, designed by our consulting team’s 6 years inside businesses just like yours."
                 image={bannerImage}
                 primaryBtn={{
-                    text: "Book A Demo",
+                    text: "Book A Demo -->",
                     link: "#",
                 }}
                 secondaryBtn={{
-                    text: "Explore Platform",
+                    text: "Watch 2-Min Walkthrough",
                     link: "#",
                 }}
                 showPlayIcon={true}

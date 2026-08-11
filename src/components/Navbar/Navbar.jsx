@@ -5,11 +5,13 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NAV_ITEMS = [
     { name: "Solutions", to: "/" },
-    { name: "Modules", to: "/modules" },
-    { name: "Industries", to: "/industries" },
+    { name: "Partners", to: "/partners" },
+    // { name: "Modules", to: "/modules" },
+    // { name: "Industries", to: "/industries" },
     { name: "Pricing", to: "/pricing" },
-    { name: "Resources", to: "/resources" },
-    { name: "Contact", to: "/contact" },
+    // { name: "Resources", to: "/resources" },
+    // { name: "Contact", to: "/contact" },
+    { name: "About Us", to: "/aboutus" },
 ]
 
 
@@ -52,9 +54,12 @@ export const Navbar = () => {
                         )}
 
                     </ul>
-                    <a href="#" className="common-btn">
+                    <Link
+                        to="/book-a-demo"
+                        className="common-btn"
+                    >
                         <p>Book A Demo</p>
-                    </a>
+                    </Link>
 
                 </div>
             </div>

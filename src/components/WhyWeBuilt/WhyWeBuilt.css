@@ -1,0 +1,85 @@
+.why-we-built {
+    padding: 0 0 50px;
+}
+
+.why-we-built .common-title {
+    margin-bottom: 35px;
+}
+
+.why-we-built .common-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.why-we-built .common-title h2 span {
+    color: var(--orange-color);
+}
+
+.why-we-built-content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.why-we-built-content p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.why-we-built-highlight {
+    border-left: 4px solid var(--orange-color);
+    padding: 5px 0 5px 25px;
+    margin-top: 18px;
+}
+
+.why-we-built-highlight h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.why-we-built-highlight h3 span {
+    color: var(--orange-color);
+}
+
+/* .why-we-built-highlight h3::first-letter {
+    color: inherit;
+} */
+
+@media screen and (max-width: 768px) {
+    .why-we-built {
+        padding-bottom: 35px;
+    }
+
+    .why-we-built .common-title {
+        margin-bottom: 25px;
+    }
+
+    .why-we-built .common-title h2 {
+        font-size: 25px;
+    }
+
+    .why-we-built-content p {
+        font-size: 14px;
+    }
+
+    .why-we-built-highlight {
+        padding-left: 18px;
+    }
+
+    .why-we-built-highlight h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .why-we-built .common-title h2 {
+        font-size: 23px;
+    }
+
+    .why-we-built-highlight h3 {
+        font-size: 17px;
+    }
+}
