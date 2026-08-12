@@ -48,11 +48,11 @@ const Banner = ({
 
                             <div className="btn-group gap-3">
 
-                                <Link href={primaryBtn.link} className="common-btn">
+                                <Link to={primaryBtn.link} className="common-btn">
                                     <p>{primaryBtn.text}</p>
                                 </Link>
 
-                                <Link href={secondaryBtn.link} className="common-btn">
+                                <Link to={secondaryBtn.link} className="common-btn">
 
                                     <p>{secondaryBtn.text}</p>
 
