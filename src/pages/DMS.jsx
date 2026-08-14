@@ -19,10 +19,9 @@ const plans = [
         billing: "",
         tickIcon: BlueIcon,
         description: "One system for orders, stock, and retailer records See what's actually in stock, in real time Simple entry, no retraining required",
-        featurehead: "Features Included:",
+        featurehead: "Key features:",
         features: [
-            "Zero Automation",
-            "Basic Reports",
+            "Complied Reports",
             "E-Invoicing Ready",
             "SLA Based Support",
         ],
@@ -41,11 +40,11 @@ const plans = [
         billing: "",
         tickIcon: OrangeIcon,
         description: "One system for orders, stock, and retailer records See what's actually in stock, in real time Simple entry, no retraining required",
-        featurehead: "Everything in Basic, plus:",
+        featurehead: "Everything in Starter, and:",
         features: [
-            "OTC Automation",
+            "Automated OTC Modules",
             "GST Complied Reports",
-            "Basic Finance & Banking",
+            "Access to Finance & Banking",
             "Automated Pricing Strategy",
         ],
         bestfor: "Best For",
@@ -66,7 +65,7 @@ const plans = [
         billing: "",
         tickIcon: BlueIcon,
         description: "Automated reconciliation across locations Low-stock and overdue-payment alerts, before they become problems Ready to scale to more retailers without adding headcount",
-        featurehead: "Features Included:",
+        featurehead: "Everything in Core, and:",
         features: [
             "Business Intelligence (BI)",
             "Sales Force Automation (SFA)",
@@ -151,9 +150,22 @@ const DMS = () => {
             />
             <WhyChooseUs
                 wchClass='dms-wch'
-                title="Why Choose"
-                spanTitle="Distributor Management System?"
-                description="Managing distributors across multiple locations can be complex. DrishtiQon Distributor Management System centralizes your entire distribution ecosystem—from order processing and inventory to pricing, schemes, and performance analytics—so you can make faster, data-driven decisions."
+                title="Sound familiar?"
+                spanTitle=""
+                description={
+                    <>
+                        <ul>
+                            <li>Forty retailers, half of them behind on payment, and you're the only one who actually knows who owes what</li>
+                            <li>Stock says one thing. The warehouse says another.</li>
+                            <li>An order goes out wrong, and you find out from an angry retailer not from your own system</li>
+                        </ul>
+                    </>
+                }
+                cardsTitle={
+                    <>
+                        That's exactly what Distributor Pack was built to fix.
+                    </>
+                }
                 cards={whycards}
             />
             <Plans

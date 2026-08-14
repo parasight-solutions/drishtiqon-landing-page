@@ -1,7 +1,7 @@
 import React from "react";
 import "./why.css";
 
-const Why = ({ title, spanTitle, description, cards ,wchClass="",}) => {
+const Why = ({ title, spanTitle, description, cardsTitle, cards, wchClass = "", }) => {
   return (
     <section className="why pt-4">
       <div className={`container ${wchClass}`}>
@@ -11,7 +11,9 @@ const Why = ({ title, spanTitle, description, cards ,wchClass="",}) => {
             <p>{description}</p>
           </div>
         </div>
-
+        <div className="row common-title text-center mb-lg-5 mb-4">
+           <h2  data-aos="fade-up">{cardsTitle}</h2>
+        </div>
         <div className="grid-container" data-aos="fade-up">
           {cards.map((item) => (
             <div className="why-card" key={item.id}>

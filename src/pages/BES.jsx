@@ -83,9 +83,22 @@ const BES = () => {
             />
             <WhyChooseUs
                 wchClass='bes-wch'
-                title="Why Choose"
-                spanTitle="Business Enterprise Suite?"
-                description="Every enterprise operates differently. Business Enterprise Suite is built to fit your organization's unique processes, approval hierarchies, departments, and reporting requirements. From implementation to ongoing support, we deliver an ERP solution tailored specifically to your business."
+                title="Where standard software stops working"
+                spanTitle=""
+                description={
+                    <>
+                        <ul>
+                            <li>Different entities running different systems, and no single view across any of them</li>
+                            <li>A compliance question your team can't answer without a week of manual digging</li>
+                            <li>A platform that fit when you were smaller, and hasn't scaled with you since</li>
+                        </ul>
+                    </>
+                }
+                cardsTitle={
+                    <>
+                        That's the gap Enterprise is built to close.
+                    </>
+                }
                 cards={whycards}
             />
             {/* <Plans

@@ -32,10 +32,13 @@
 
 /* footer  */
 .footer {
-  background-color: #fee1bf;
+  background-color:#12183A;
   padding: 130px 0 40px 0;
 }
 
+.footer p{
+  color:#8991B8;
+}
 .footer-img img {
   width: 220px;
   margin-bottom: 15px;
@@ -45,6 +48,7 @@
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 15px;
+  color: #FFFFFF;
 }
 
 .footer ul {
@@ -61,7 +65,7 @@
 
 .footer ul li a {
   font-size: 14px;
-  color: #00000099;
+  color: #C9CCE0;
 }
 
 .map iframe {

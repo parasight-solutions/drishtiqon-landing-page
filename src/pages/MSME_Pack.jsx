@@ -19,10 +19,9 @@ const plans = [
         billing: "",
         tickIcon: OrangeIcon,
         description: "Get all your data into one place, accessible from anywhere Simple entry, no training required See your business clearly for the first time",
-        featurehead: "Features Included:",
+        featurehead: "Key Features",
         features: [
-            "Zero Automation",
-            "Basic Reports",
+            "Compiled Reports",
             "E-Invoicing Ready",
             "SLA Based Support",
         ],
@@ -41,12 +40,11 @@ const plans = [
         billing: "",
         tickIcon: BlueIcon,
         description: "Everything in Starter, plus the tools you'll actually use every day Built-in reports so you stop guessing Multiple team members, without the chaos",
-        featurehead: "Features Included:",
+        featurehead: "Everything in Starter, and:",
         features: [
-            "Everything in Basic, plus",
             "Automated OTC Modules",
-            "Basic Finance & Banking",
             "GST Complied Reports",
+            "Access to Finance & Banking",
 
         ],
         bestfor: "Best For",
@@ -67,12 +65,11 @@ const plans = [
         billing: "",
         tickIcon: OrangeIcon,
         description: "Everything in Core, plus automation for your busiest tasks Save hours every week on repeat work Ready to scale without switching systems later",
-        featurehead: "Features Included:",
+        featurehead: "Everything in Core, and:",
         features: [
-            "Zero Automation",
-            "Basic Reports",
-            "E-Invoicing Ready",
-            "SLA Based Support",
+            "Automated Pricing Strategy",
+            "PnL/ BS Overview",
+            "Business Intelligence",
         ],
         bestfor: "Best For",
         bestdescription: "Small businesses looking for an affordable ERP solution.",
@@ -153,9 +150,24 @@ const MSME_Pack = () => {
             />
             <WhyChooseUs
                 wchClass='msme-wch'
-                title="Why Choose"
-                spanTitle="MSME Pack?"
-                description="Running a growing business involves managing multiple processes every day—from sales and purchases to inventory and accounting. MSME Pack brings everything together into one integrated platform, helping you reduce manual work, improve accuracy, and scale your business with confidence."
+                title="Sound familiar?"
+                spanTitle=""
+                description={
+                    <>
+                       <ul>
+                        <li>Data scattered across notebooks, Excel sheets, and someone's memory.</li>
+                        <li>Mistakes that only get caught after a customer complains.</li>
+                        <li>No time (or budget) to learn "enterprise" software built for someone else's business.</li>
+                       </ul>
+                    </>
+                }
+                cardsTitle={
+                    <>
+                        That's exactly what the Msme pack was built to fix.
+                        <br />
+                        Nothing more. Nothing you don't need.
+                    </>
+                }
                 cards={whycards}
             />
             <Plans

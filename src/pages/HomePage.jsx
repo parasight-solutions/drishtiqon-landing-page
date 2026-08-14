@@ -19,7 +19,7 @@ const plans = [
         icon: "/logo-icons/rocket.png",
         name: "MSME Pack",
         shortDescription:
-            "Designed for growing small and medium businesses.",
+            "For businesses that don't run on guesswork.",
         price: "",
         duration: "",
         billing: "",
@@ -36,9 +36,9 @@ const plans = [
     },
     {
         icon: "/logo-icons/growth-icon.png",
-        name: "Distributor Management System",
+        name: "Distributor pack",
         shortDescription:
-            "Complete for modern businesses.",
+            "For operations that can't afford to find out late.",
         price: "",
         duration: "",
         billing: "",
@@ -59,9 +59,9 @@ const plans = [
     },
     {
         icon: "/logo-icons/enterprises.png",
-        name: "Business Enterprise Suite",
+        name: "Enterprise Pack",
         shortDescription:
-            "A fully customizable ERP solution built around your business.",
+            "Software that adapts to you not the other way around.",
         price: "",
         duration: "",
         billing: "",
@@ -144,8 +144,8 @@ Warehouse into one platform, designed by our consulting team’s 6 years inside 
             <Clients />
             <Module />
             <WhyChooseUs
-                title="Why Businesses Choose DrishtIQon"
-                description="Manage every critical business process from a centralized ERP ecosystem designed to improve collaboration, productivity, and operational excellence."
+                title="What 6 years of Consulting Taught Us to Build."
+                description=""
                 cards={whycards}
             />
             <Analytics />

@@ -37,16 +37,14 @@ const BookADemo = () => {
 
                     {/* LEFT CONTENT */}
                     <div className="book-demo-content">
-
                         <h1>
-                            Book A Demo{" "}
-                            <span>Today.</span>
+                            See how Drishtiqon fits into your team’s workflows.
+                            {/* Book A Demo{" "}
+                            <span>Today.</span> */}
                         </h1>
 
                         <p className="book-demo-description">
-                            See how DrishtiQon unifies Finance, Procurement,
-                            Inventory, Production, Sales, and Warehouse in
-                            one intelligent platform.
+                            A personalized demo, build around your team’s challenges, led by experts who understand what matters.
                         </p>
 
                         <div className="book-demo-benefits">
@@ -216,11 +214,11 @@ const BookADemo = () => {
                                 className="book-demo-submit"
                             >
                                 <span>
-                                    Book A Demo — It Is Free
+                                    Book A Demo
                                 </span>
 
                                 <span className="submit-arrow">
-                                    →
+                                   
                                 </span>
                             </button>
 
