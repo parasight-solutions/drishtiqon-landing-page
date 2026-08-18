@@ -36,6 +36,7 @@
 .counter-box h2 {
     color: var(--orange-color);
     font-weight: 700;
+      font-family: "Libre Caslon Text", serif;
 }
 
 .clients-section .row div:nth-child(1) .counter-box h2,

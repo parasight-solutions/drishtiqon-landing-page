@@ -36,6 +36,7 @@
     font-size: 18px;
     font-weight: 600;
     color: #171717CC;
+      font-family: "Albert Sans", sans-serif;
 }
 
 .need-card {
@@ -56,6 +57,7 @@
     font-weight: 600;
     line-height: 1.2;
     color: #000;
+      font-family: "Libre Caslon Text", serif;
 }
 
 .need-card-price {

@@ -8,10 +8,12 @@
   /* font-size: 39px; */
   color: var(--blue-color);
   font-weight: 700;
+  font-family: "Libre Caslon Text", serif;
 }
 
 .footer-strip .common-title h2 span {
   color: var(--orange-color);
+  font-family: "Libre Caslon Text", serif;
 }
 
 .footer-strip .common-btn:nth-child(2) {
@@ -32,12 +34,13 @@
 
 /* footer  */
 .footer {
-  background-color:#12183A;
+  background-color: #12183a;
   padding: 130px 0 40px 0;
 }
 
-.footer p{
-  color:#8991B8;
+.footer p {
+  color: #8991b8;
+  font-family: "Albert Sans", sans-serif;
 }
 .footer-img img {
   width: 220px;
@@ -48,7 +51,7 @@
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer ul {
@@ -65,7 +68,7 @@
 
 .footer ul li a {
   font-size: 14px;
-  color: #C9CCE0;
+  color: #c9cce0;
 }
 
 .map iframe {

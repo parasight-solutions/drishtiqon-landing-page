@@ -11,6 +11,7 @@
 .why .common-title p {
   text-align: left;
   max-width: 690px;
+  font-family: "Albert Sans", sans-serif;
 }
 
 /* Tablet */
@@ -47,6 +48,7 @@
   font-size: 18px;
   color: #000000;
   margin-bottom: 8px;
+  font-family: "Libre Caslon Text", serif;
 }
 
 .dms-wch span {
@@ -91,7 +93,7 @@
   left: 0;
   width: 5px;
   height: 100%;
-  background:  #12183A;
+  background: #12183a;
   border-radius: 16px 0 0 16px;
 }
 
@@ -101,6 +103,7 @@
   font-size: 17px;
   line-height: 1.6;
   font-weight: 500;
+  font-family: "Albert Sans", sans-serif;
 }
 
 .familiar-card:hover {

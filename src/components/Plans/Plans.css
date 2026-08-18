@@ -24,9 +24,11 @@
 }
 .bg-blue h2 {
   color: #ffffff;
+    font-family: "Libre Caslon Text", serif;
 }
 .bg-blue .common-title p {
   color: #ffffff;
+    font-family: "Albert Sans", sans-serif;
 }
 
 .plans .card .card-header .image img {
@@ -72,6 +74,7 @@
 
 .list-wrapper .list p {
   margin-bottom: 0;
+    font-family: "Albert Sans", sans-serif;
 }
 
 .plans .card .common-btn {
@@ -105,6 +108,7 @@
 .middle .pill p {
   margin-bottom: 0;
   color: white;
+    font-family: "Albert Sans", sans-serif;
 }
 
 .middle .common-btn {

@@ -19,6 +19,7 @@
 }
 
 .book-demo-content h1 {
+  font-family: "Libre Caslon Text", serif;
   margin-bottom: 12px;
   color: #17174a;
   font-size: 40px;
@@ -28,6 +29,7 @@
 
 .book-demo-content h1 span {
   color: var(--orange-color);
+  font-family: "Libre Caslon Text", serif;
 }
 
 .book-demo-description {
@@ -36,6 +38,7 @@
   color: #444444;
   font-size: 14px;
   line-height: 1.7;
+  font-family: "Albert Sans", sans-serif;
 }
 
 /* =========================
@@ -78,6 +81,7 @@
   color: #444444;
   font-size: 13px;
   line-height: 1.5;
+  font-family: "Albert Sans", sans-serif;
 }
 
 /* =========================

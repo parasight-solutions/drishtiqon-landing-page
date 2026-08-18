@@ -30,6 +30,7 @@
 .solution-card .content h3 {
     font-size: 18px;
     font-weight: 700;
+      font-family: "Albert Sans", sans-serif;
 }
 
 .solution-card .content p {
