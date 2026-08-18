@@ -7,6 +7,7 @@ import Plans from '../components/Plans/Plans'
 import OrangeIcon from "/logo-icons/orange-tick.png";
 import BlueIcon from "/logo-icons/blue-tick.png";
 import GreenIcon from "/logo-icons/green-tick.png";
+import ImplementationProcess from "../components/ImplementationProcess/ImplementationProcess";
 
 const plans = [
     {
@@ -113,6 +114,21 @@ const MSME_Pack = () => {
         },
     ];
 
+    const familiarCards = [
+        {
+            id: 1,
+            text: "Data scattered across notebooks, Excel sheets, and someone's memory.",
+        },
+        {
+            id: 2,
+            text: "Mistakes that only get caught after a customer complains.",
+        },
+        {
+            id: 3,
+            text: "No time (or budget) to learn \"enterprise\" software built for someone else's business.",
+        },
+    ];
+
     return (
         <>
             <Breadcrumb
@@ -152,15 +168,8 @@ const MSME_Pack = () => {
                 wchClass='msme-wch'
                 title="Sound familiar?"
                 spanTitle=""
-                description={
-                    <>
-                       <ul>
-                        <li>Data scattered across notebooks, Excel sheets, and someone's memory.</li>
-                        <li>Mistakes that only get caught after a customer complains.</li>
-                        <li>No time (or budget) to learn "enterprise" software built for someone else's business.</li>
-                       </ul>
-                    </>
-                }
+                description=""
+                familiarCards={familiarCards}
                 cardsTitle={
                     <>
                         That's exactly what the Msme pack was built to fix.
@@ -170,6 +179,7 @@ const MSME_Pack = () => {
                 }
                 cards={whycards}
             />
+            <ImplementationProcess />
             <Plans
                 title="Choose Your Edition"
                 description="Flexible plans designed for businesses at every stage of growth."

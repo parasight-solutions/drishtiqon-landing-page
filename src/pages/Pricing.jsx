@@ -87,7 +87,7 @@ const Pricing = () => {
                 title="Simple Plans, Powerful Platform."
                 description="Start with a plan that fits your business today and expand with modules as your operations grow."
                 plans={plans}
-                containerClass="bg-cyan"
+                containerClass="bg-blue"
             />
         </>
     )

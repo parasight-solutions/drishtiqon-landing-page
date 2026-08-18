@@ -9,6 +9,8 @@ import Module from '../components/Module/Module'
 import Plans from '../components/Plans/Plans'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import bannerImage from "/section-images/banner-img.png";
+import ImplementationProcess from "../components/ImplementationProcess/ImplementationProcess";
+import { ArrowRight } from "lucide-react";
 
 import OrangeIcon from "/logo-icons/orange-tick.png";
 import BlueIcon from "/logo-icons/blue-tick.png";
@@ -132,7 +134,11 @@ const HomePage = () => {
 Warehouse into one platform, designed by our consulting team’s 6 years inside businesses just like yours."
                 image={bannerImage}
                 primaryBtn={{
-                    text: "Book A Demo -->",
+                    text: (
+                        <>
+                            Book A Demo <ArrowRight />
+                        </>
+                    ),
                     link: "/book-a-demo",
                 }}
                 secondaryBtn={{
@@ -141,21 +147,22 @@ Warehouse into one platform, designed by our consulting team’s 6 years inside 
                 }}
                 showPlayIcon={true}
             />
-            <Clients />
+            <Clients isLandingPage={true} />
             <Module />
             <WhyChooseUs
                 title="What 6 years of Consulting Taught Us to Build."
                 description=""
                 cards={whycards}
             />
-            <Analytics />
+            {/* <Analytics /> */}
+            <ImplementationProcess />
             <Solutions />
             {/* <Need /> */}
             <Plans
                 title="Simple Plans, Powerful Platform."
                 description="Start with a plan that fits your business today and expand with modules as your operations grow."
                 plans={plans}
-                containerClass="bg-cyan"
+                containerClass="bg-blue"
             />
         </>
     )

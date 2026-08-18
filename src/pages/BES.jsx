@@ -8,6 +8,7 @@ import OrangeIcon from "/logo-icons/orange-tick.png";
 import BlueIcon from "/logo-icons/blue-tick.png";
 import GreenIcon from "/logo-icons/green-tick.png";
 import Need from '../components/Need/Need';
+import ImplementationProcess from "../components/ImplementationProcess/ImplementationProcess";
 
 
 const BES = () => {
@@ -43,6 +44,21 @@ const BES = () => {
             description: "Work with a dedicated implementation team for deployment, training, and ongoing support.",
         },
     ];
+    const familiarCards = [
+        {
+            id: 1,
+            text: "Different entities running different systems, and no single view across any of them",
+        },
+        {
+            id: 2,
+            text: "A compliance question your team can't answer without a week of manual digging",
+        },
+        {
+            id: 3,
+            text: "A platform that fit when you were smaller, and hasn't scaled with you since",
+        },
+    ];
+
 
     return (
         <>
@@ -85,15 +101,8 @@ const BES = () => {
                 wchClass='bes-wch'
                 title="Where standard software stops working"
                 spanTitle=""
-                description={
-                    <>
-                        <ul>
-                            <li>Different entities running different systems, and no single view across any of them</li>
-                            <li>A compliance question your team can't answer without a week of manual digging</li>
-                            <li>A platform that fit when you were smaller, and hasn't scaled with you since</li>
-                        </ul>
-                    </>
-                }
+                description=""
+                familiarCards={familiarCards}
                 cardsTitle={
                     <>
                         That's the gap Enterprise is built to close.
@@ -101,6 +110,7 @@ const BES = () => {
                 }
                 cards={whycards}
             />
+            <ImplementationProcess />
             {/* <Plans
                 title="Choose Your Edition"
                 description="Flexible plans designed for businesses at every stage of growth."

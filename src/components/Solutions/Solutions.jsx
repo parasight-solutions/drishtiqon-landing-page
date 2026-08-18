@@ -5,9 +5,9 @@ const Solutions = () => {
     const solutions = [
         {
             id: 1,
-            img: '/logo-icons/manufacturing.png',
-            title: 'Manufacturing',
-            description: 'Optimize production planning, inventory control, resource utilization, and shop floor operations.'
+            img: '/logo-icons/delivery-truck.png',
+            title: 'Logistics',
+            description: 'Track shipments, optimize routes, and manage warehouse operations with real-time visibility.'
         },
         {
             id: 2,
@@ -23,11 +23,11 @@ const Solutions = () => {
         },
         {
             id: 4,
-            img: '/logo-icons/delivery-truck.png',
-            title: 'Logistics',
-            description: 'Track shipments, optimize routes, and manage warehouse operations with real-time visibility.'
+            img: '/logo-icons/manufacturing.png',
+            title: 'Manufacturing',
+            description: 'Optimize production planning, inventory control, resource utilization, and shop floor operations.'
         },
-    ]
+    ];
     return (
         <section className="solutions">
             <div className="container">

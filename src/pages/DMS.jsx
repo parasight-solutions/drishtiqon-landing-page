@@ -7,6 +7,7 @@ import Plans from '../components/Plans/Plans'
 import OrangeIcon from "/logo-icons/orange-tick.png";
 import BlueIcon from "/logo-icons/blue-tick.png";
 import GreenIcon from "/logo-icons/green-tick.png";
+import ImplementationProcess from "../components/ImplementationProcess/ImplementationProcess";
 
 const plans = [
     {
@@ -112,6 +113,22 @@ const DMS = () => {
         },
     ];
 
+    const familiarCards = [
+        {
+            id: 1,
+            text: "Forty retailers, half of them behind on payment, and you're the only one who actually knows who owes what",
+        },
+        {
+            id: 2,
+            text: "Stock says one thing. The warehouse says another.",
+        },
+        {
+            id: 3,
+            text: "An order goes out wrong, and you find out from an angry retailer not from your own system",
+        },
+    ];
+
+
     return (
         <>
             <Breadcrumb
@@ -152,15 +169,8 @@ const DMS = () => {
                 wchClass='dms-wch'
                 title="Sound familiar?"
                 spanTitle=""
-                description={
-                    <>
-                        <ul>
-                            <li>Forty retailers, half of them behind on payment, and you're the only one who actually knows who owes what</li>
-                            <li>Stock says one thing. The warehouse says another.</li>
-                            <li>An order goes out wrong, and you find out from an angry retailer not from your own system</li>
-                        </ul>
-                    </>
-                }
+                description=""
+                familiarCards={familiarCards}
                 cardsTitle={
                     <>
                         That's exactly what Distributor Pack was built to fix.
@@ -168,6 +178,7 @@ const DMS = () => {
                 }
                 cards={whycards}
             />
+            <ImplementationProcess />
             <Plans
                 title="Choose Your Edition"
                 description="Flexible plans designed for businesses at every stage of growth."

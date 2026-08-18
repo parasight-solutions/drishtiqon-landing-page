@@ -52,7 +52,7 @@ const Banner = ({
                                     <p>{primaryBtn.text}</p>
                                 </Link>
 
-                                <Link to={secondaryBtn.link} className="common-btn">
+                                {/* <Link to={secondaryBtn.link} className="common-btn">
 
                                     <p>{secondaryBtn.text}</p>
 
@@ -60,7 +60,7 @@ const Banner = ({
                                         <img src={playButton} alt="" />
                                     )}
 
-                                </Link>
+                                </Link> */}
 
                             </div>
 

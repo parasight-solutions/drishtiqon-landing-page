@@ -10,12 +10,13 @@
 
 .banner-content h1 {
   font-size: 39px;
-  color: #000000cc;
+  color: #12183a;
   font-weight: 700;
 }
 
 .banner-content h1 span {
   color: var(--orange-color);
+  font-family: "Libre Caslon", serif;
 }
 .dms-banner h1 span {
   color: var(--blue-color);
