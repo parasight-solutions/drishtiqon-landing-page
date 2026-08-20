@@ -46,7 +46,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Albert", sans-serif;
+  font-family: "Albert Sans";
 }
 
 a {
@@ -63,7 +63,7 @@ img {
 }
 
 p {
-  font-family: "Albert", sans-serif;
+  font-family: "Albert Sans";
   font-size: 14px;
   color: #000000cc;
   font-weight: 400;
@@ -103,7 +103,7 @@ h4,
 h5,
 h6,
 .common-title h2 {
-  font-family: "Libre Caslon", serif;
+  font-family: "Libre Caslon Text";
   color: var(--primary-blue);
   margin-bottom: 12px;
   font-weight: 700;
