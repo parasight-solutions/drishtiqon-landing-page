@@ -160,7 +160,7 @@ Warehouse into one platform, designed by our consulting team’s 6 years inside 
             {/* <Need /> */}
             <Plans
                 title="Simple Plans, Powerful Platform."
-                description="Start with a plan that fits your business today and expand with modules as your operations grow."
+                description="Built for how you actually run your business."
                 plans={plans}
                 containerClass="bg-blue"
             />

@@ -5,6 +5,7 @@ import Plans from '../components/Plans/Plans'
 import OrangeIcon from "/logo-icons/orange-tick.png";
 import BlueIcon from "/logo-icons/blue-tick.png";
 import GreenIcon from "/logo-icons/green-tick.png";
+import Clients from '../components/Clients/Clients';
 
 const plans = [
     {
@@ -89,6 +90,7 @@ const Pricing = () => {
                 plans={plans}
                 containerClass="bg-blue"
             />
+            <Clients className="no-bottom-padding" />
         </>
     )
 }

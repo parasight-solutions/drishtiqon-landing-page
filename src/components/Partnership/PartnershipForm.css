@@ -1,0 +1,466 @@
+.partnership-section {
+  width: 100%;
+  background: linear-gradient(to right, #ffffff 0%, #f8feffea 100%);
+}
+
+/* .partnership-container {
+  max-width: 1542px;
+} */
+
+.partnership-row {
+  --bs-gutter-x: 60px;
+}
+
+.partnership-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.partnership-heading {
+  margin: 0;
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.5;
+  color: var(--hero-text-color);
+}
+
+.partnership-highlight {
+  color: var(--orange-color);
+  font-family: "Libre Caslon Text";
+}
+
+.partnership-description {
+  max-width: 619px;
+  margin: 19px 0 0;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.partnership-benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  padding-top: 21px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.benefit-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(241, 122, 33, 0.12);
+  border-radius: 50%;
+  color: var(--orange-color);
+}
+
+.benefit-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.benefit-content h3 {
+  margin: 0;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.benefit-content p {
+  margin: 0;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.partnership-form-card {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  padding: 30px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #dbdee7;
+  border-radius: 24px;
+}
+
+.partnership-form-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.form-heading {
+  margin: 0 0 1px;
+  font-family: "Libre Caslon Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--hero-text-color);
+}
+
+/* ============================= */
+/* Fields */
+/* ============================= */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-field label {
+  margin: 0;
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: rgba(29, 39, 83, 0.5);
+}
+
+.form-field label span {
+  color: inherit;
+}
+
+.form-fields-row {
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+}
+
+.partnership-input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+
+  padding: 0 16.55px;
+
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #1d2753;
+  background: #f9fafb;
+
+  border: 1.04764px solid #e5e7eb;
+  border-radius: 10.4764px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.partnership-input::placeholder {
+  color: rgba(29, 39, 83, 0.35);
+  opacity: 1;
+}
+
+.partnership-input:hover {
+  border-color: #d7dae2;
+}
+
+.partnership-input:focus {
+  background: #ffffff;
+  border-color: rgba(241, 122, 33, 0.7);
+  box-shadow: 0 0 0 3px rgba(241, 122, 33, 0.1);
+}
+
+.partnership-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231D2753' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 14px;
+
+  padding-right: 42px;
+}
+
+.phone-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.country-code {
+  width: 60px;
+  min-width: 60px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  background: #f9fafb;
+  border: 1.04764px solid #e5e7eb;
+  border-radius: 10.4764px;
+
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #1d2753;
+}
+
+.phone-input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ============================= */
+/* Button */
+/* ============================= */
+
+.form-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.partner-submit-btn {
+  width: 100%;
+  min-height: 61px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 16px 20px;
+
+  border: 0;
+  outline: none;
+
+  background: var(--orange-color);
+  border-radius: 8px;
+
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.005em;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.partner-submit-btn:hover {
+  background: var(--dark-color);
+}
+
+.partner-submit-btn:active {
+  transform: translateY(1px);
+}
+
+.partner-submit-btn:focus-visible {
+  box-shadow: 0 0 0 4px rgba(241, 122, 33, 0.2);
+}
+
+.form-terms {
+  margin: 0;
+  max-width: 520px;
+
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+
+  text-align: center;
+
+  color: rgba(29, 39, 83, 0.45);
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+
+@media (max-width: 1399.98px) {
+  .partnership-container {
+    max-width: 1320px;
+  }
+
+  .partnership-heading {
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .partnership-section {
+    padding: 70px 0;
+  }
+
+  .partnership-row {
+    --bs-gutter-x: 40px;
+  }
+
+  .partnership-heading {
+    font-size: 36px;
+  }
+
+  .partnership-form-card {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .partnership-section {
+    padding: 60px 0;
+  }
+
+  .partnership-row {
+    --bs-gutter-y: 50px;
+  }
+
+  .partnership-content {
+    max-width: 700px;
+  }
+
+  .partnership-heading {
+    font-size: 38px;
+  }
+
+  .partnership-form-card {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .partnership-section {
+    padding: 45px 0;
+  }
+
+  .partnership-heading {
+    font-size: 32px;
+    line-height: 1.35;
+  }
+
+  .partnership-description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .benefit-content h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .benefit-content p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .partnership-form-card {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .form-heading {
+    font-size: 27px;
+    line-height: 36px;
+  }
+
+  .form-field label {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .form-fields-row {
+    --bs-gutter-y: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .partnership-section {
+    padding: 35px 0;
+  }
+
+  .partnership-heading {
+    font-size: 29px;
+  }
+
+  .partnership-benefits {
+    gap: 20px;
+  }
+
+  .benefit-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .partnership-form-card {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .form-heading {
+    font-size: 25px;
+  }
+
+  .partnership-form-card form {
+    gap: 18px;
+  }
+
+  .partner-submit-btn {
+    min-height: 54px;
+    padding: 12px 16px;
+  }
+}

@@ -60,6 +60,8 @@ img {
 :root {
   --orange-color: #f77f1e;
   --blue-color: #2c3786;
+  --dark-color:#12183A;
+  --hero-text-color:#18205A;
 }
 
 p {

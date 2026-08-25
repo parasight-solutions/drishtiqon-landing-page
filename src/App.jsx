@@ -19,6 +19,7 @@ import Contact from './pages/Contact';
 import AboutUs from './pages/AboutUs';
 import BookADemoPage from './pages/BookADemoPage';
 import Pricing from './pages/Pricing';
+import Partners from './pages/Partners';
 import MSME_Pack from './pages/MSME_Pack';
 import DMS from './pages/DMS';
 import BES from './pages/BES';
@@ -71,7 +72,7 @@ function App() {
                     <Route path="contact" element={<Contact />} />
                     <Route path="aboutus" element={<AboutUs />} />
                     <Route path="pricing" element={<Pricing />} />
-
+                    <Route path="partners" element={<Partners />} />
                     <Route path="msme-pack" element={<MSME_Pack />} />
                     <Route path="dms" element={<DMS />} />
                     <Route path="bes" element={<BES />} />

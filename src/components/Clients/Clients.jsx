@@ -2,7 +2,7 @@ import React from 'react'
 import ClientCarousel from './ClientCarousel'
 import "./Clients.css"
 
-const Clients = ({ isLandingPage = false }) => {
+const Clients = ({className = "", isLandingPage = false }) => {
 
     const counterData = [
         {
@@ -33,7 +33,7 @@ const Clients = ({ isLandingPage = false }) => {
     ];
 
     return (
-        <section className="clients-section">
+        <section className={`clients-section ${className}`}>
             <div className="container">
 
                 <div className="row text-center">

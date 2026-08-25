@@ -77,7 +77,7 @@ const AboutUs = () => {
                 authorImage={founderImage}
             />
 
-            <Clients />
+          <Clients className="no-bottom-padding" />
         </>
     );
 };

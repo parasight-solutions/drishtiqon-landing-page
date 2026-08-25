@@ -28,7 +28,7 @@ const BookADemoPage = () => {
             />
 
             <BookADemo />
-            <Clients />
+            <Clients className="no-bottom-padding" />
         </>
     );
 };

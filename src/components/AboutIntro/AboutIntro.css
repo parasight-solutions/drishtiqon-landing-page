@@ -3,7 +3,7 @@
 }
 
 .about-intro-box {
-    background-color: #303b8d;
+    background-color: var(--dark-color);
     border-radius: 12px;
     padding: 40px 35px;
     min-height: 220px;
