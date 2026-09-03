@@ -9,7 +9,7 @@ const Clients = ({className = "", isLandingPage = false }) => {
             id: 1,
             value: 500,
             suffix: "+",
-            label: "Transition Made",
+            label: "Transactions Made",
         },
         {
             id: 2,

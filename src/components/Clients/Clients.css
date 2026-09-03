@@ -46,7 +46,7 @@
 
 
 .counter-box p {
-
+    color: var(--hero-text-color);
     margin-bottom: 0;
 }
 

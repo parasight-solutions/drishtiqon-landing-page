@@ -40,9 +40,8 @@ const AboutUs = () => {
                 paragraphs={[
                     "Before writing a line of code, we asked a simpler question: why do so many growing businesses stay stuck on spreadsheets, fragmented tools, and manual reconciliation long after they've outgrown them.",
 
-                    "The answer wasn't a lack of software. It was too much of the wrong kind — tools that solved one problem each, none of them talking to the others.",
+                    "The answer wasn't a lack of software. It was too much of the wrong kind, tools that solved one problem each, none of them talking to the others. And the ones that did talk to each other were built for companies far bigger than the ones that needed them.",
 
-                    "The businesses weren't failing because their teams weren't capable. They were failing because the systems around them couldn't keep up.",
                 ]}
                 highlightPrefix="That's the gap"
                 highlightText="DrishtiQon"

@@ -83,12 +83,12 @@ const PartnershipForm = () => {
                                             Affiliate Partner
                                         </option>
                                         <option value="Referral Partner">Referral Partner</option>
-                                        <option value="Technology Partner">
+                                        {/* <option value="Technology Partner">
                                             Technology Partner
                                         </option>
                                         <option value="Consulting Partner">
                                             Consulting Partner
-                                        </option>
+                                        </option> */}
                                     </select>
                                 </div>
 

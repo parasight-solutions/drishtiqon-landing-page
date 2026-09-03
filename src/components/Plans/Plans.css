@@ -141,7 +141,8 @@
 }
 
 .end h6 {
-  color: #00a843;
+  /* color: #00a843; */
+  color: var(--primary-green);
   font-weight: 600;
   /* margin-top: 15px; */
 }
@@ -154,7 +155,8 @@
 }
 
 .end .common-btn {
-  background-color: #00a843;
+  /* background-color: #00a843; */
+  background-color: var(--primary-green);
 }
 .msme-card .end .common-btn {
   background-color: var(--orange-color);

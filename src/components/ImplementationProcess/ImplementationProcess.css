@@ -198,7 +198,7 @@
 
 .implementation-point p {
   margin: 0;
-  color: #707070;
+  color: var(--hero-text-color);
   font-family: "Albert Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
