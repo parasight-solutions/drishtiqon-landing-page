@@ -1,7 +1,18 @@
 import nodemailer from "nodemailer";
 
+const ALLOWED_COMPANY_SIZES = [
+    "1-10",
+    "11-50",
+    "51-200",
+    "201-500",
+    "500+",
+];
+
 export default async function handler(req, res) {
-    // Only allow POST requests
+    // ---------------------------------
+    // ONLY ALLOW POST REQUESTS
+    // ---------------------------------
+
     if (req.method !== "POST") {
         return res.status(405).json({
             success: false,
@@ -18,16 +29,45 @@ export default async function handler(req, res) {
             companySize,
         } = req.body || {};
 
-        // -----------------------------
-        // SERVER-SIDE VALIDATION
-        // -----------------------------
+        // ---------------------------------
+        // CLEAN INPUT
+        // ---------------------------------
+
+        const cleanFirstName =
+            typeof firstName === "string"
+                ? firstName.trim()
+                : "";
+
+        const cleanLastName =
+            typeof lastName === "string"
+                ? lastName.trim()
+                : "";
+
+        const cleanEmail =
+            typeof email === "string"
+                ? email.trim().toLowerCase()
+                : "";
+
+        const cleanPhone =
+            typeof phone === "string"
+                ? phone.trim()
+                : "";
+
+        const cleanCompanySize =
+            typeof companySize === "string"
+                ? companySize.trim()
+                : "";
+
+        // ---------------------------------
+        // REQUIRED FIELD VALIDATION
+        // ---------------------------------
 
         if (
-            !firstName ||
-            !lastName ||
-            !email ||
-            !phone ||
-            !companySize
+            !cleanFirstName ||
+            !cleanLastName ||
+            !cleanEmail ||
+            !cleanPhone ||
+            !cleanCompanySize
         ) {
             return res.status(400).json({
                 success: false,
@@ -35,20 +75,138 @@ export default async function handler(req, res) {
             });
         }
 
-        // Basic email validation
-        const emailRegex =
-            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // ---------------------------------
+        // FIRST NAME VALIDATION
+        // ---------------------------------
 
-        if (!emailRegex.test(email)) {
+        if (cleanFirstName.length < 2) {
             return res.status(400).json({
                 success: false,
-                message: "Please enter a valid email address.",
+                message:
+                    "First name must be at least 2 characters.",
             });
         }
 
-        // -----------------------------
+        if (cleanFirstName.length > 50) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "First name must be less than 50 characters.",
+            });
+        }
+
+        if (!/^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/.test(cleanFirstName)) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Please enter a valid first name.",
+            });
+        }
+
+        // ---------------------------------
+        // LAST NAME VALIDATION
+        // ---------------------------------
+
+        if (cleanLastName.length < 2) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Last name must be at least 2 characters.",
+            });
+        }
+
+        if (cleanLastName.length > 50) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Last name must be less than 50 characters.",
+            });
+        }
+
+        if (!/^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/.test(cleanLastName)) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Please enter a valid last name.",
+            });
+        }
+
+        // ---------------------------------
+        // EMAIL VALIDATION
+        // ---------------------------------
+
+        if (cleanEmail.length > 254) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Email address is too long.",
+            });
+        }
+
+        const emailRegex =
+            /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+        if (!emailRegex.test(cleanEmail)) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Please enter a valid email address.",
+            });
+        }
+
+        // ---------------------------------
+        // PHONE VALIDATION
+        // ---------------------------------
+
+        const normalizedPhone =
+            cleanPhone.replace(/[\s()-]/g, "");
+
+        if (!/^\+?[0-9]{7,15}$/.test(normalizedPhone)) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Please enter a valid phone number.",
+            });
+        }
+
+        // ---------------------------------
+        // COMPANY SIZE VALIDATION
+        // ---------------------------------
+
+        if (
+            !ALLOWED_COMPANY_SIZES.includes(
+                cleanCompanySize
+            )
+        ) {
+            return res.status(400).json({
+                success: false,
+                message:
+                    "Please select a valid company size.",
+            });
+        }
+
+        // ---------------------------------
+        // CHECK GMAIL ENVIRONMENT VARIABLES
+        // ---------------------------------
+
+        if (
+            !process.env.GMAIL_USER ||
+            !process.env.GMAIL_APP_PASSWORD
+        ) {
+            console.error(
+                "Missing Gmail environment variables."
+            );
+
+            return res.status(500).json({
+                success: false,
+                message:
+                    "Email service is not configured correctly.",
+            });
+        }
+
+        // ---------------------------------
         // CREATE GMAIL TRANSPORTER
-        // -----------------------------
+        // ---------------------------------
 
         const transporter = nodemailer.createTransport({
             service: "gmail",
@@ -59,27 +217,28 @@ export default async function handler(req, res) {
             },
         });
 
-        // -----------------------------
+        // ---------------------------------
         // VERIFY GMAIL CONNECTION
-        // -----------------------------
+        // ---------------------------------
 
         await transporter.verify();
 
-        // -----------------------------
-        // EMAIL TO YOU
-        // -----------------------------
+        // ---------------------------------
+        // EMAIL TO SELLER
+        // ---------------------------------
 
         await transporter.sendMail({
             from: `"Drishtiqon Website" <${process.env.GMAIL_USER}>`,
 
             to: process.env.GMAIL_USER,
 
-            replyTo: email,
+            replyTo: cleanEmail,
 
-            subject: `New Demo Request - ${firstName} ${lastName}`,
+            subject: `New Demo Request - ${cleanFirstName} ${cleanLastName}`,
 
             html: `
                 <!DOCTYPE html>
+
                 <html>
                 <head>
                     <meta charset="UTF-8" />
@@ -113,6 +272,7 @@ export default async function handler(req, res) {
                                 color: #ffffff;
                             "
                         >
+
                             <h1
                                 style="
                                     margin: 0;
@@ -128,9 +288,10 @@ export default async function handler(req, res) {
                                     color: #cccccc;
                                 "
                             >
-                                Someone has requested a demo through
-                                your website.
+                                Someone has requested a demo
+                                through your website.
                             </p>
+
                         </div>
 
                         <div style="padding: 24px;">
@@ -171,7 +332,7 @@ export default async function handler(req, res) {
                                             border-bottom: 1px solid #eeeeee;
                                         "
                                     >
-                                        ${escapeHtml(firstName)}
+                                        ${escapeHtml(cleanFirstName)}
                                     </td>
                                 </tr>
 
@@ -190,7 +351,7 @@ export default async function handler(req, res) {
                                             border-bottom: 1px solid #eeeeee;
                                         "
                                     >
-                                        ${escapeHtml(lastName)}
+                                        ${escapeHtml(cleanLastName)}
                                     </td>
                                 </tr>
 
@@ -209,7 +370,7 @@ export default async function handler(req, res) {
                                             border-bottom: 1px solid #eeeeee;
                                         "
                                     >
-                                        ${escapeHtml(email)}
+                                        ${escapeHtml(cleanEmail)}
                                     </td>
                                 </tr>
 
@@ -228,7 +389,7 @@ export default async function handler(req, res) {
                                             border-bottom: 1px solid #eeeeee;
                                         "
                                     >
-                                        ${escapeHtml(phone)}
+                                        ${escapeHtml(cleanPhone)}
                                     </td>
                                 </tr>
 
@@ -242,7 +403,7 @@ export default async function handler(req, res) {
                                     </td>
 
                                     <td>
-                                        ${escapeHtml(companySize)}
+                                        ${escapeHtml(cleanCompanySize)}
                                     </td>
                                 </tr>
 
@@ -256,6 +417,7 @@ export default async function handler(req, res) {
                                     border-radius: 6px;
                                 "
                             >
+
                                 <p
                                     style="
                                         margin: 0;
@@ -263,9 +425,11 @@ export default async function handler(req, res) {
                                         color: #555555;
                                     "
                                 >
-                                    Click "Reply" to respond directly
-                                    to ${escapeHtml(firstName)}.
+                                    Click "Reply" to respond
+                                    directly to
+                                    ${escapeHtml(cleanFirstName)}.
                                 </p>
+
                             </div>
 
                         </div>
@@ -277,21 +441,23 @@ export default async function handler(req, res) {
             `,
         });
 
-        // -----------------------------
+        // ---------------------------------
         // CONFIRMATION EMAIL TO CUSTOMER
-        // -----------------------------
+        // ---------------------------------
 
         await transporter.sendMail({
             from: `"Drishtiqon" <${process.env.GMAIL_USER}>`,
 
-            to: email,
+            to: cleanEmail,
 
             replyTo: process.env.GMAIL_USER,
 
-            subject: "We received your demo request",
+            subject:
+                "We received your demo request",
 
             html: `
                 <!DOCTYPE html>
+
                 <html>
                 <head>
                     <meta charset="UTF-8" />
@@ -325,14 +491,17 @@ export default async function handler(req, res) {
                                 color: #ffffff;
                             "
                         >
+
                             <h1
                                 style="
                                     margin: 0;
                                     font-size: 24px;
                                 "
                             >
-                                Thank You, ${escapeHtml(firstName)}!
+                                Thank You,
+                                ${escapeHtml(cleanFirstName)}!
                             </h1>
+
                         </div>
 
                         <div style="padding: 28px;">
@@ -368,6 +537,7 @@ export default async function handler(req, res) {
                                     border-radius: 6px;
                                 "
                             >
+
                                 <p
                                     style="
                                         margin: 0 0 8px;
@@ -385,8 +555,8 @@ export default async function handler(req, res) {
                                     "
                                 >
                                     <strong>Name:</strong>
-                                    ${escapeHtml(firstName)}
-                                    ${escapeHtml(lastName)}
+                                    ${escapeHtml(cleanFirstName)}
+                                    ${escapeHtml(cleanLastName)}
                                 </p>
 
                                 <p
@@ -396,7 +566,7 @@ export default async function handler(req, res) {
                                     "
                                 >
                                     <strong>Email:</strong>
-                                    ${escapeHtml(email)}
+                                    ${escapeHtml(cleanEmail)}
                                 </p>
 
                                 <p
@@ -406,7 +576,7 @@ export default async function handler(req, res) {
                                     "
                                 >
                                     <strong>Phone:</strong>
-                                    ${escapeHtml(phone)}
+                                    ${escapeHtml(cleanPhone)}
                                 </p>
 
                                 <p
@@ -416,8 +586,9 @@ export default async function handler(req, res) {
                                     "
                                 >
                                     <strong>Company Size:</strong>
-                                    ${escapeHtml(companySize)}
+                                    ${escapeHtml(cleanCompanySize)}
                                 </p>
+
                             </div>
 
                             <p
@@ -449,9 +620,9 @@ export default async function handler(req, res) {
             `,
         });
 
-        // -----------------------------
+        // ---------------------------------
         // SUCCESS RESPONSE
-        // -----------------------------
+        // ---------------------------------
 
         return res.status(200).json({
             success: true,
@@ -460,7 +631,10 @@ export default async function handler(req, res) {
         });
 
     } catch (error) {
-        console.error("Book A Demo email error:", error);
+        console.error(
+            "Book A Demo email error:",
+            error
+        );
 
         return res.status(500).json({
             success: false,
@@ -471,10 +645,10 @@ export default async function handler(req, res) {
 }
 
 
-/**
- * Escape user-provided values before putting them
- * into an HTML email.
- */
+// ---------------------------------
+// HTML ESCAPE FUNCTION
+// ---------------------------------
+
 function escapeHtml(value) {
     return String(value)
         .replace(/&/g, "&amp;")
