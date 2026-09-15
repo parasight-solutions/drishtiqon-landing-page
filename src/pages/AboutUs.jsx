@@ -71,9 +71,9 @@ const AboutUs = () => {
 
                 quote="We're not a software implementation company. We're solution architects."
 
-                authorName="Hemraj Naidu"
+                authorName="Drishtiqon Team"
                 authorRole="Founder, DrishtiQon"
-                authorImage={founderImage}
+                authorImage=""
             />
 
           <Clients className="no-bottom-padding" />
